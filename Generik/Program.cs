@@ -27,18 +27,18 @@
             ts2[ts2.Length - 1] = item;
         }
 
-        //public void RemoveAt(int index)
-        //{
-        //    if (index < 0 || index >= Ts.Length)
-        //    {
-        //        Console.WriteLine("такого индекса нет");
-        //    }
+        public void RemoveAt(int index)
+        {
+            if (index < 0 || index >= Ts.Length)
+            {
+                Console.WriteLine("такого индекса нет");
+            }
 
-        //    T[] newArray = new T[Ts.Length - 1];
-        //    Array.Copy(Ts, newArray, index);
-        //    Array.Copy(Ts, index + 1, newArray, index, Ts.Length - index - 1);
-        //    Ts = newArray;
-        //}
+            T[] newArray = new T[Ts.Length - 1];
+            Array.Copy(Ts, newArray, index);
+            Array.Copy(Ts, index + 1, newArray, index, Ts.Length - index - 1);
+            Ts = newArray;
+        }
 
         public T GetElement(int index)
         {
